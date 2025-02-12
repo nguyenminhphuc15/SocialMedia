@@ -1,0 +1,191 @@
+* {
+  padding-right: 0;
+  margin-left: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: rgb(143, 142, 138);
+}
+#login-component {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+#logo {
+  position: relative;
+  margin-top: 25px;
+  img {
+    filter: brightness(0) invert(1);
+  }
+}
+#logofb {
+  width: 20px;
+  height: 20px;
+  object-fit: cover; /* Đảm bảo ảnh được cắt vừa khung */
+  border-radius: 50%; /* Làm ảnh tròn, nếu phù hợp */
+}
+
+#banner {
+  background-color: black;
+}
+.cover {
+  position: relative;
+  margin-top: 150px;
+  display: flex;
+}
+
+.container {
+  height: 395px;
+  width: 340px;
+  margin-top: 25px;
+  margin-left: 30px;
+  text-align: center;
+  border-color: rgb(54, 54, 54);
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#email,
+#password {
+  background-color: rgb(252, 251, 251);
+  padding-left: 10px;
+  margin-top: 8px;
+  position: relative;
+  border-color: rgb(230, 234, 236);
+  text-align: left;
+  height: 37px;
+  width: 270px;
+  font-size: 12px;
+  border-radius: 3.5px;
+  border-style: solid;
+  border-width: 0.5px;
+}
+
+.btn {
+  width: 270px;
+  height: 32px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background: #75a1f2;
+  margin-top: 15px;
+  font-size: 15px;
+  border: none;
+}
+
+h4 {
+  text-decoration: #000000;
+  font-size: 12px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.bx-sl {
+  position: centre;
+  display: flex;
+  margin-left: 100px;
+  margin-top: 20px;
+  top: 3px;
+  #login_fb {
+    color: rgb(0, 149, 246);
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+#login_fb {
+  color: rgb(29, 33, 105);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  position: absolute;
+  cursor: pointer;
+  margin-left: 25px;
+  margin-top: -2px;
+  color: rgb(50, 102, 170);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container-2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+  font-size: 12px;
+  position: centre;
+  cursor: pointer;
+  color: beige;
+  padding-left: 5px;
+}
+
+.container-3 {
+  height: 65px;
+  width: 340px;
+  margin-top: 430px;
+  position: absolute;
+  margin-left: -340px;
+  border-color: rgb(54, 54, 54);
+  border-radius: 0px;
+  border-style: solid;
+  color: rgb(39, 162, 244);
+  border-width: 1px;
+}
+
+#signup {
+  position: centre;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 13.5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.middle-Or {
+  display: flex;
+  direction: row;
+  margin: 14px 40px 22px 40px;
+  .middle-Or-Line {
+    top: 0.45em;
+    height: 1px;
+    flex-shrink: 1;
+    position: relative;
+    flex-grow: 1;
+    background-color: rgb(38, 38, 38);
+  }
+  .middle-Or-Text {
+    text-transform: uppercase;
+    margin-right: 18px;
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 18px;
+    font-weight: 600;
+    align-items: stretch;
+    font-size: 0.8125rem;
+    position: relative;
+    line-height: 1.1538;
+    vertical-align: baseline;
+    color: rgb(168, 168, 168);
+  }
+}
+.box {
+  margin-top: 30px;
+  color: rgb(176, 183, 189);
+}
+
+.apps_link {
+  position: absolute;
+  margin-top: 495px;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: -200px;
+}
+
+.google_play {
+  position: absolute;
+  margin-top: 545px;
+  margin-left: -290px;
+}
+
+.microsoft {
+  position: absolute;
+  margin-top: 545px;
+  margin-left: -140px;
+}

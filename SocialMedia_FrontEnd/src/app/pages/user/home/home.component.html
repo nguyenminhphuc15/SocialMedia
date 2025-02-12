@@ -1,0 +1,10 @@
+<div class="homecomponent">
+  <!-- Khi màn hình lớn hơn 765px -->
+  <div *ngIf="!isSmallScreen" class="computerscreen">
+    <app-regularlayout />
+  </div>
+  <!-- Khi màn hình nhỏ hơn hoặc bằng 765px -->
+  <div *ngIf="isSmallScreen">
+    <app-mobilelayout />
+  </div>
+</div>

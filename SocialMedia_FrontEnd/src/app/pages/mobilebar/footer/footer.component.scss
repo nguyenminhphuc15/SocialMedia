@@ -1,0 +1,37 @@
+.footercomponent {
+  .footer-items {
+    display: flex;
+    height: 60px;
+    position: fixed; // Giữ navbar cố định ở đầu màn hình
+    bottom: 0; // Đặt nó ở đầu trang
+    left: 0; // Cố định từ bên trái
+    right: 0; // Cố định từ bên phải
+    z-index: 1000; // Đảm bảo navbar luôn ở trên các phần tử khác
+    justify-content: space-around;
+    div {
+      width: 48px;
+      height: 48px;
+      a {
+        height: 100%;
+        width: 100%;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        text-decoration: none; /* Loại bỏ gạch chân mặc định */
+        color: inherit; /* Đảm bảo màu sắc thừa kế từ cha */
+        transition: background-color 0.3s ease, font-weight 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
+
+        i {
+          font-size: 24px;
+        }
+        &:hover {
+          background-color: #817d7d; /* Màu xám nhẹ */
+        }
+
+        &:visited {
+          font-weight: bold; /* Đổi chữ thành đậm khi đã thăm */
+        }
+      }
+    }
+  }
+}

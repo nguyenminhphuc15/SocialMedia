@@ -1,0 +1,106 @@
+.footer {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  .footer-item {
+    margin: 10px;
+    a {
+      font-weight: 400;
+      color: rgb(168, 168, 168);
+      font-size: 12px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+    }
+  }
+}
+
+#a:link {
+  text-decoration: none;
+}
+
+#a:visited {
+  text-decoration: none;
+}
+
+#a:hover {
+  text-decoration: underline;
+}
+
+#a:active {
+  text-decoration: underline;
+}
+
+#b:link {
+  text-decoration: none;
+}
+
+#b:visited {
+  text-decoration: none;
+}
+
+#b:hover {
+  text-decoration: underline;
+}
+
+#b:active {
+  text-decoration: underline;
+}
+
+#c:link {
+  text-decoration: none;
+}
+
+#c:visited {
+  text-decoration: none;
+}
+
+#c:hover {
+  text-decoration: underline;
+}
+
+#c:active {
+  text-decoration: underline;
+}
+
+#f:link {
+  text-decoration: none;
+}
+
+#f:visited {
+  text-decoration: none;
+}
+
+#f:hover {
+  text-decoration: underline;
+}
+
+#f:active {
+  text-decoration: underline;
+}
+
+#e:link {
+  text-decoration: none;
+}
+
+#e:visited {
+  text-decoration: none;
+}
+
+#e:hover {
+  text-decoration: underline;
+}
+
+#e:active {
+  text-decoration: underline;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  p {
+    color: rgb(168, 168, 168);
+    font-weight: 400;
+    font-size: 12px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}

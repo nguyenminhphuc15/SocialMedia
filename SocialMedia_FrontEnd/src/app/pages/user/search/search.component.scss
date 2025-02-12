@@ -1,0 +1,81 @@
+.search_Feature {
+  height: 100%;
+  width: calc(var(--nav-wide-width) - var(--nav-medium-width));
+  display: block;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-right-style: solid;
+  border-right: 1px solid rgb(38, 38, 38);
+  .search_Input {
+    border-bottom: 1px solid rgb(54, 54, 54);
+    .search_Input_Title {
+      padding: 12px 14px 36px 24px;
+      margin: 8px 0px;
+      span {
+        font-weight: 600;
+        font-size: 24px;
+      }
+    }
+    .search_Input_Text {
+      position: relative; // Để có thể căn chỉnh biểu tượng ở vị trí tuyệt đối trong ô input
+      width: 90%; // Chiều rộng của thẻ chứa
+      margin: 0 8px 15px;
+      input {
+        width: 100%;
+        margin-top: 5px;
+        height: 80%;
+        padding: 10px 20px 10px 40px; // Khoảng cách bên trái đủ lớn để chứa biểu tượng
+        font-size: 16px;
+        border: none;
+        border-radius: 15px; // Bo góc cho input
+        outline: none;
+        background-color: rgb(54, 54, 54);
+        // Thêm hiệu ứng focus
+        &:focus {
+          border-color: #007bff; // Thay đổi màu viền khi focus
+        }
+      }
+
+      i {
+        position: absolute; // Đặt biểu tượng ở vị trí tuyệt đối
+        top: 55%; // Căn giữa theo chiều dọc
+        left: 12px; // Khoảng cách từ bên trái ô input
+        transform: translateY(
+          -50%
+        ); // Điều chỉnh cho biểu tượng nằm đúng giữa ô input
+        font-size: 16px;
+        color: #888; // Màu sắc của biểu tượng
+      }
+    }
+  }
+  .recent_Results {
+    height: auto;
+    display: none;
+    &.show {
+      display: block;
+    }
+    .recent_Results_Title {
+      margin: 8px 24px;
+      span {
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+    .recent_Results_Data {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      span {
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(168, 168, 168);
+      }
+    }
+  }
+  .search_Result {
+    display: none;
+    &.show {
+      display: block;
+    }
+  }
+}

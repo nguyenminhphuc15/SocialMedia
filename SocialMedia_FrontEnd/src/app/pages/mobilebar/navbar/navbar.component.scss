@@ -1,0 +1,63 @@
+.navbar {
+  padding: 0px 16px;
+  display: flex;
+  height: 60px;
+  position: fixed; // Giữ navbar cố định ở đầu màn hình
+  top: 0; // Đặt nó ở đầu trang
+  left: 0; // Cố định từ bên trái
+  right: 0; // Cố định từ bên phải
+  z-index: 1000; // Đảm bảo navbar luôn ở trên các phần tử khác
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  .navbar-logo {
+    width: 40%;
+  }
+  .navbar-item {
+    width: 60%;
+    display: flex;
+    .item-search {
+      position: relative; // Để có thể căn chỉnh biểu tượng ở vị trí tuyệt đối trong ô input
+      width: 90%; // Chiều rộng của thẻ chứa
+
+      input {
+        width: 100%;
+        margin-top: 5px;
+        height: 80%;
+        padding: 10px 20px 10px 40px; // Khoảng cách bên trái đủ lớn để chứa biểu tượng
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 20px; // Bo góc cho input
+        outline: none;
+
+        // Thêm hiệu ứng focus
+        &:focus {
+          border-color: #007bff; // Thay đổi màu viền khi focus
+        }
+      }
+
+      i {
+        position: absolute; // Đặt biểu tượng ở vị trí tuyệt đối
+        top: 50%; // Căn giữa theo chiều dọc
+        left: 12px; // Khoảng cách từ bên trái ô input
+        transform: translateY(
+          -50%
+        ); // Điều chỉnh cho biểu tượng nằm đúng giữa ô input
+        font-size: 24px;
+        color: #888; // Màu sắc của biểu tượng
+
+        // Thêm hiệu ứng hover cho biểu tượng
+        &:hover {
+          color: #007bff; // Màu sắc khi hover vào biểu tượng
+        }
+      }
+    }
+    .item-notifications {
+      padding-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        font-size: 24px;
+      }
+    }
+  }
+}

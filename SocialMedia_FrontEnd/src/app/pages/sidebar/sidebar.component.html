@@ -1,0 +1,64 @@
+<div class="sidebar_component">
+  <div
+    class="sidebar-features"
+    [ngClass]="{ medium: isMediumWidth }"
+    [style.width]="
+      isMediumWidth ? 'var(--nav-medium-width)' : 'var(--nav-wide-width)'
+    "
+  >
+    <div class="sidebar-logo">
+      <a href="#">
+        <div class="logo-text">Instagram</div>
+        <div class="logo-image">
+          <img src="assets/icon.png" alt="Instagram Logo" /></div
+      ></a>
+    </div>
+
+    <div class="sidebar-items">
+      <div class="item-home">
+        <a href="#">
+          <i class="fas fa-regular fa-house"></i> <span>Home</span>
+        </a>
+      </div>
+      <div class="item-search" (click)="onShowSearch()">
+        <a>
+          <i class="fa-solid fa-magnifying-glass"></i> <span>Search</span>
+        </a>
+      </div>
+      <div class="item-explore">
+        <a href="#"
+          ><i class="fa-regular fa-compass"></i><span>Explore</span></a
+        >
+      </div>
+      <div class="item-reels">
+        <a href="#"> <i class="fa-solid fa-video"></i> <span>Videos</span> </a>
+      </div>
+      <div class="item-message">
+        <a href="#"
+          ><i class="fa-regular fa-message"></i> <span>Message</span></a
+        >
+      </div>
+      <div class="item-notifications">
+        <a href="#">
+          <i class="fa-regular fa-heart"></i> <span>Notifications</span>
+        </a>
+      </div>
+      <div class="item-create">
+        <a href="#"
+          ><i class="fa-regular fa-square-plus"></i> <span>Create</span></a
+        >
+      </div>
+      <div class="item-profile">
+        <a href="#"><i class="fa-regular fa-user"></i> <span>Profie</span></a>
+      </div>
+    </div>
+    <div class="sidebar-more">
+      <div>
+        <a href="#"><i class="fa-solid fa-bars"></i> <span>More</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="search_component" *ngIf="isShowSearch">
+    <app-search />
+  </div>
+</div>

@@ -1,0 +1,112 @@
+<div id="login-component">
+  <div style="display: flex; justify-content: center; flex-grow: 1">
+    <div class="cover">
+      <img
+        id="banner"
+        src="assets/banner.png"
+        alt=""
+        height="600px"
+        width="400px"
+      />
+      <div>
+        <div class="container">
+          <h1 id="logo">
+            <img
+              src="assets/Instagram_logo.svg.png"
+              alt=""
+              height="70"
+              width="175"
+            />
+          </h1>
+          <div class="box">
+            <!-- Bind các input với các thuộc tính email và password -->
+            <input
+              id="email"
+              type="text"
+              [(ngModel)]="email"
+              placeholder="Phone number, username, or email"
+            />
+            <input
+              id="password"
+              type="password"
+              [(ngModel)]="password"
+              placeholder="Password"
+            />
+            <button
+              class="btn btn-hover btn"
+              (click)="onLogin()"
+              title="Log in"
+            >
+              Log in
+            </button>
+
+            <div class="middle-Or">
+              <div class="middle-Or-Line"></div>
+              <div class="middle-Or-Text">Or</div>
+              <div class="middle-Or-Line"></div>
+            </div>
+            <div class="bx-sl">
+              <img id="logofb" src="assets/logofb.jpg" alt="" />
+              <a
+                id="login_fb"
+                href="https://www.facebook.com/login.php"
+                target="_blank"
+                >Login with Facebook</a
+              >
+            </div>
+            <div class="container-2">
+              <a
+                style="
+                  color: rgb(224, 241, 255);
+                  font-size: 14px;
+                  font-weight: 400;
+                "
+                href="forgot-pass"
+                >Forgot Password?</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="container-3">
+          <ul id="signup">
+            <a style="color: rgb(245, 245, 245)"> Don't have an account ?</a>
+            <strong style="margin-left: 5px">
+              <a style="color: rgb(64, 153, 237)" href="signUp">Sign up</a>
+            </strong>
+          </ul>
+        </div>
+        <div class="apps_link">
+          <p
+            style="
+              color: rgb(245, 245, 245);
+              font-size: 14px;
+              font-weight: 400;
+              margin-top: 10px;
+            "
+          >
+            Get the app.
+          </p>
+        </div>
+        <div class="google_play">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.instagram.android"
+            target="_blank"
+          >
+            <img src="assets/play.png" alt="" height="40px" />
+          </a>
+        </div>
+        <div class="microsoft">
+          <a
+            href="https://apps.microsoft.com/store/detail/instagram/9NBLGGH5L9XT"
+            target="_blank"
+          >
+            <img src="assets/microsoft.png" alt="" height="40px" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

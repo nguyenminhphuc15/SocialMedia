@@ -1,0 +1,23 @@
+<div class="search_Feature">
+  <div class="search_Input">
+    <div class="search_Input_Title"><span>Search</span></div>
+    <div class="search_Input_Text">
+      <input
+        type="text"
+        name="search"
+        id=""
+        placeholder="Search"
+        (input)="onSearch($event)"
+      /><i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </div>
+
+  <div class="recent_Results" [ngClass]="{ show: !isSearch }">
+    <div class="recent_Results_Title"><span>Recent</span></div>
+    <div class="recent_Results_Data"><span>No recent searches</span></div>
+  </div>
+
+  <div class="search_Result" [ngClass]="{ show: isSearch }">
+    <span>Post test</span>
+  </div>
+</div>

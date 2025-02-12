@@ -1,0 +1,121 @@
+.logo-text {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: white;
+}
+
+.logo-image {
+  display: none;
+}
+.sidebar_component {
+  display: flex;
+  .sidebar-features {
+    width: var(--nav-wide-width);
+    height: 100vh;
+    border-right: 1px solid rgba(38, 38, 38);
+    padding: 8px 12px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    transition: width 0.5s ease;
+    &.medium {
+      .sidebar-items span,
+      .sidebar-more span {
+        display: none;
+      }
+      .logo-text {
+        display: none;
+      }
+
+      .logo-image {
+        display: block; /* Bỏ ẩn phần tử .logo-image */
+        width: 40px;
+        height: 40px;
+        padding-left: 10px;
+      }
+
+      .logo-image img {
+        width: 30px;
+        height: auto;
+        display: block;
+      }
+    }
+    .sidebar-logo {
+      height: 10%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .sidebar-items {
+      height: 80%;
+      div {
+        width: 100%;
+        height: 10%;
+        a {
+          height: 100%;
+          width: 100%;
+          padding-left: 10px;
+          display: flex;
+          align-items: center;
+          text-decoration: none; /* Loại bỏ gạch chân mặc định */
+          color: inherit; /* Đảm bảo màu sắc thừa kế từ cha */
+          transition: background-color 0.3s ease, font-weight 0.3s ease;
+
+          i {
+            font-size: 24px;
+          }
+
+          span {
+            padding-left: 16px;
+          }
+
+          /* Hiệu ứng hover: thay đổi màu nền */
+          &:hover {
+            background-color: #817d7d; /* Màu xám nhẹ */
+          }
+
+          /* Hiệu ứng visited: thay đổi font-weight */
+          &:visited {
+            font-weight: bold; /* Đổi chữ thành đậm khi đã thăm */
+          }
+        }
+      }
+    }
+
+    .sidebar-more {
+      height: 10%;
+      div {
+        width: 100%;
+        height: 52px;
+        a {
+          height: 100%;
+          width: 100%;
+          padding-left: 10px;
+          display: flex;
+          align-items: center;
+          i {
+            font-size: 24px;
+          }
+          span {
+            padding-left: 16px;
+          }
+          &:hover {
+            background-color: #817d7d; /* Màu xám nhẹ */
+          }
+        }
+      }
+    }
+  }
+  .search_component {
+    transition: width 0.5s ease;
+  }
+}
+
+@media (max-width: 1265px) {
+  .sidebar-features {
+    width: var(--nav-medium-width);
+  }
+}
