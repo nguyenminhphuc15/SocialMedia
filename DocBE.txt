@@ -1,0 +1,21 @@
+manage.py: Công cụ quản lý project.
+
+myproject/: Thư mục chứa các settings, urls, wsgi.
+
+settings.py: Cấu hình project.
+
+urls.py: Định nghĩa các URL patterns.
+
+wsgi.py: Cấu hình cho web server.
+
+myapp/: Thư mục chứa code ứng dụng của bạn.
+
+models.py: Định nghĩa các models (cơ sở dữ liệu).
+
+views.py: Xử lý logic và trả về responses.
+
+urls.py: Định nghĩa các URL patterns cho app này. (Cần tạo thủ công)
+
+admin.py: Cấu hình giao diện quản trị.
+
+forms.py: Định nghĩa các forms (tương tác với người dùng).
