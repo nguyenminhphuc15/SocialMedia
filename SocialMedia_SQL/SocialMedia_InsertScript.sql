@@ -122,3 +122,83 @@ INSERT INTO `message_reactions` (message_id, user_id, emoji) VALUES
 -- Thêm dữ liệu vào bảng `message_status` (mở rộng)
 INSERT INTO `message_status` (message_id, user_id, is_read, is_pinned) VALUES
 (1, 2, TRUE, FALSE), (2, 1, TRUE, TRUE), (3, 4, FALSE, FALSE), (4, 7, TRUE, FALSE), (5, 6, FALSE, TRUE);
+
+-- Dữ liệu cho bảng Story
+INSERT INTO Story (UserId, MediaType, MediaUrl, ExpiresAt) VALUES
+(1, 'IMAGE', 'story_1_1.jpg', '2024-01-02 10:00:00'),
+(2, 'VIDEO', 'story_2_1.mp4', '2024-01-02 11:00:00'),
+(3, 'IMAGE', 'story_3_1.jpg', '2024-01-02 12:00:00'),
+(4, 'VIDEO', 'story_4_1.mp4', '2024-01-02 13:00:00'),
+(5, 'IMAGE', 'story_5_1.jpg', '2024-01-02 14:00:00'),
+(6, 'VIDEO', 'story_6_1.mp4', '2024-01-02 15:00:00'),
+(7, 'IMAGE', 'story_7_1.jpg', '2024-01-02 16:00:00'),
+(8, 'VIDEO', 'story_8_1.mp4', '2024-01-02 17:00:00'),
+(9, 'IMAGE', 'story_9_1.jpg', '2024-01-02 18:00:00'),
+(10, 'VIDEO', 'story_10_1.mp4', '2024-01-02 19:00:00'),
+(1, 'IMAGE', 'story_1_2.jpg', '2024-01-02 20:00:00'),
+(2, 'VIDEO', 'story_2_2.mp4', '2024-01-02 21:00:00'),
+(3, 'IMAGE', 'story_3_2.jpg', '2024-01-02 22:00:00'),
+(4, 'VIDEO', 'story_4_2.mp4', '2024-01-02 23:00:00'),
+(5, 'IMAGE', 'story_5_2.jpg', '2024-01-03 00:00:00'),
+(6, 'VIDEO', 'story_6_2.mp4', '2024-01-03 01:00:00'),
+(7, 'IMAGE', 'story_7_2.jpg', '2024-01-03 02:00:00'),
+(8, 'VIDEO', 'story_8_2.mp4', '2024-01-03 03:00:00'),
+(9, 'IMAGE', 'story_9_2.jpg', '2024-01-03 04:00:00'),
+(10, 'VIDEO', 'story_10_2.mp4', '2024-01-03 05:00:00');
+
+-- Dữ liệu cho bảng StoryView (mỗi story có nhiều view)
+INSERT INTO StoryView (StoryId, UserId) VALUES
+(1, 2), (1, 3), (1, 4), (1, 5), (1, 6),
+(2, 1), (2, 3), (2, 5), (2, 7), (2, 9),
+(3, 1), (3, 2), (3, 4), (3, 6), (3, 8),
+(4, 2), (4, 4), (4, 6), (4, 8), (4, 10),
+(5, 1), (5, 3), (5, 5), (5, 7), (5, 9),
+(6, 2), (6, 4), (6, 6), (6, 8), (6, 10),
+(7, 1), (7, 3), (7, 5), (7, 7), (7, 9),
+(8, 2), (8, 4), (8, 6), (8, 8), (8, 10),
+(9, 1), (9, 3), (9, 5), (9, 7), (9, 9),
+(10, 2), (10, 4), (10, 6), (10, 8), (10, 10),
+(11, 2), (11, 3), (11, 4), (11, 5), (11, 6),
+(12, 1), (12, 3), (12, 5), (12, 7), (12, 9),
+(13, 1), (13, 2), (13, 4), (13, 6), (13, 8),
+(14, 2), (14, 4), (14, 6), (14, 8), (14, 10),
+(15, 1), (15, 3), (15, 5), (15, 7), (15, 9),
+(16, 2), (16, 4), (16, 6), (16, 8), (16, 10),
+(17, 1), (17, 3), (17, 5), (17, 7), (17, 9),
+(18, 2), (18, 4), (18, 6), (18, 8), (18, 10),
+(19, 1), (19, 3), (19, 5), (19, 7), (19, 9),
+(20, 2), (20, 4), (20, 6), (20, 8), (20, 10);
+
+-- Dữ liệu cho bảng StoryHighlight
+INSERT INTO StoryHighlight (UserId, Title, CoverImage) VALUES
+(1, 'Paris Trip', 'paris_cover.jpg'),
+(2, 'Workout Routine', 'workout_cover.jpg'),
+(3, 'Coding Projects', 'coding_cover.jpg'),
+(4, 'Favorite Books', 'books_cover.jpg'),
+(5, 'Brunch Spots', 'brunch_cover.jpg'),
+(6, 'Art Collection', 'art_cover.jpg'),
+(7, 'Guitar Practice', 'guitar_cover.jpg'),
+(8, 'Rome Adventure', 'rome_cover.jpg'),
+(9, 'Investing Tips', 'investing_cover.jpg'),
+(10, 'History Lessons', 'history_cover.jpg'),
+(1, 'Travel Memories', 'travel_cover.jpg'),
+(2, 'Fitness Goals', 'fitness_cover.jpg'),
+(3, 'Web Development', 'webdev_cover.jpg'),
+(4, 'Book Recommendations', 'bookrecs_cover.jpg'),
+(5, 'Food Adventures', 'food_cover.jpg'),
+(6, 'Digital Art', 'digitalart_cover.jpg'),
+(7, 'Acoustic Covers', 'acoustic_cover.jpg'),
+(8, 'European Travels', 'europe_cover.jpg'),
+(9, 'Financial Growth', 'financialgrowth_cover.jpg'),
+(10, 'Ancient Civilizations', 'ancientciv_cover.jpg');
+
+-- Dữ liệu cho bảng StoryHighlightItem
+INSERT INTO StoryHighlightItem (StoryHighlightId, StoryId, OrderIndex) VALUES
+(1, 1, 1), (1, 11, 2), (2, 2, 1), (2, 12, 2), (3, 3, 1), (3, 13, 2),
+(4, 4, 1), (4, 14, 2), (5, 5, 1), (5, 15, 2), (6, 6, 1), (6, 16, 2),
+(7, 7, 1), (7, 17, 2), (8, 8, 1), (8, 18, 2), (9, 9, 1), (9, 19, 2),
+(10, 10, 1), (10, 20, 2),
+(11, 1, 1), (11, 2, 2), (12, 3, 1), (12, 4, 2), (13, 5, 1), (13, 6, 2),
+(14, 7, 1), (14, 8, 2), (15, 9, 1), (15, 10, 2), (16, 11, 1), (16, 12, 2),
+(17, 13, 1), (17, 14, 2), (18, 15, 1), (18, 16, 2), (19, 17, 1), (19, 18, 2),
+(20, 19, 1), (20, 20, 2);
