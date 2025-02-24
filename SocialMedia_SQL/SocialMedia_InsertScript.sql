@@ -34,17 +34,17 @@ INSERT INTO `Post` (UserId, Content, Status) VALUES
 INSERT INTO `PostMedia` (PostId, MediaUrl, MediaType) VALUES
 (1, 'eiffel_tower.jpg', 'IMAGE'),
 (2, 'workout_selfie.jpg', 'IMAGE'),
-(3, 'game_screenshot.png', 'IMAGE'),
+(3, 'game_screenshot.jpg', 'IMAGE'),
 (4, 'book_on_table.jpg', 'IMAGE'),
 (5, 'brunch_table.jpg', 'IMAGE'),
 (6, 'painting_in_progress.jpg', 'IMAGE'),
 (7, 'guitar_practice.mp4', 'VIDEO'),
 (8, 'rome_street.jpg', 'IMAGE'),
-(9, 'market_analysis.png', 'IMAGE'),
+(9, 'market_analysis.jpg', 'IMAGE'),
 (10, 'history_lesson.jpg', 'IMAGE'),
 (11, 'coffee_cup.jpg', 'IMAGE'),
 (12, 'leg_day_weights.jpg', 'IMAGE'),
-(13, 'debugging_code.png', 'IMAGE'),
+(13, 'debugging_code.jpg', 'IMAGE'),
 (14, 'rainy_day_book.jpg', 'IMAGE'),
 (15, 'homemade_pizza.jpg', 'IMAGE');
 

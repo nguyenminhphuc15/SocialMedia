@@ -85,7 +85,7 @@ export const sampleStoryHighlightItems: StoryHighlightItem[] = [
   },
   {
     StoryHighlightItemId: 36,
-    StoryHighlightItemId: 18,
+    StoryHighlightId: 18,
     StoryId: 16,
     OrderIndex: 2,
   },

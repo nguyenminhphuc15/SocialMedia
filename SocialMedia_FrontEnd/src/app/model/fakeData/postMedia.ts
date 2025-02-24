@@ -23,7 +23,7 @@ export const samplePostMedia: PostMedia[] = [
   {
     PostMediaId: 3,
     PostId: 3,
-    MediaUrl: 'game_screenshot.png',
+    MediaUrl: 'game_screenshot.jpg',
     MediaType: 'IMAGE',
   },
   {
@@ -59,7 +59,7 @@ export const samplePostMedia: PostMedia[] = [
   {
     PostMediaId: 9,
     PostId: 9,
-    MediaUrl: 'market_analysis.png',
+    MediaUrl: 'market_analysis.jpg',
     MediaType: 'IMAGE',
   },
   {
@@ -83,7 +83,7 @@ export const samplePostMedia: PostMedia[] = [
   {
     PostMediaId: 13,
     PostId: 13,
-    MediaUrl: 'debugging_code.png',
+    MediaUrl: 'debugging_code.jpg',
     MediaType: 'IMAGE',
   },
   {
